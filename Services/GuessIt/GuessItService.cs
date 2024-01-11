@@ -9,9 +9,9 @@ public class GuessItService : IGuessItService
             bool isTrue = int.TryParse(userInput, out int number);
             if(isTrue){
                 if(number < rndNumber){
-                    return "Your number was too low.";
+                    return $"Your number was too low. The number was {rndNumber}.";
                 }else if(number > rndNumber){
-                    return "Your number was too high.";
+                    return $"Your number was too high. The number was {rndNumber}.";
                 }else{
                     return "Your number was correct! You win!";
                 }
@@ -27,11 +27,11 @@ public class GuessItService : IGuessItService
             bool isTrue = int.TryParse(userInput, out int number);
             if(isTrue){
                 if(number < rndNumber){
-                    return "Your number was too low.";
+                    return $"Your number was too low. The number was {rndNumber}.";
                 }else if(number > rndNumber){
-                    return "Your number was too high.";
+                    return $"Your number was too high. The number was {rndNumber}.";
                 }else{
-                    return "Your number was correct! You win!";
+                    return $"Your number was correct! You win!";
                 }
             }else{
                 return "That was not a valid input. Try again!";
@@ -45,11 +45,11 @@ public class GuessItService : IGuessItService
             bool isTrue = int.TryParse(userInput, out int number);
             if(isTrue){
                 if(number < rndNumber){
-                    return "Your number was too low.";
+                    return $"Your number was too low. The number was {rndNumber}.";
                 }else if(number > rndNumber){
-                    return "Your number was too high.";
+                    return $"Your number was too high. The number was {rndNumber}.";
                 }else{
-                    return "Your number was correct! You win!";
+                    return $"Your number was correct! You win!";
                 }
             }else{
                 return "That was not a valid input. Try again!";
