@@ -7,7 +7,7 @@ public class GuessItService : IGuessItService
         Random rnd = new Random();
             int rndNumber = rnd.Next(1, 11);
             bool isTrue = int.TryParse(userInput, out int number);
-            if(isTrue){
+            if(isTrue && number <= 10 && number>= 1){
                 if(number < rndNumber){
                     return $"Your number was too low. The number was {rndNumber}.";
                 }else if(number > rndNumber){
@@ -25,7 +25,7 @@ public class GuessItService : IGuessItService
         Random rnd = new Random();
             int rndNumber = rnd.Next(1, 51);
             bool isTrue = int.TryParse(userInput, out int number);
-            if(isTrue){
+            if(isTrue && number <= 50 && number>= 1){
                 if(number < rndNumber){
                     return $"Your number was too low. The number was {rndNumber}.";
                 }else if(number > rndNumber){
@@ -43,7 +43,7 @@ public class GuessItService : IGuessItService
         Random rnd = new Random();
             int rndNumber = rnd.Next(1, 101);
             bool isTrue = int.TryParse(userInput, out int number);
-            if(isTrue){
+            if(isTrue && number <= 100 && number>= 1){
                 if(number < rndNumber){
                     return $"Your number was too low. The number was {rndNumber}.";
                 }else if(number > rndNumber){
